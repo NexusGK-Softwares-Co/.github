@@ -38,8 +38,8 @@ def generate_commits(repo_path, remote_url, start_date, end_date, commits_per_da
         os.remove(commit_msg_file)
 
     # Git user config (optional)
-    subprocess.run(["git", "config", "user.name", "Fake Commit Bot"], cwd=repo_path)
-    subprocess.run(["git", "config", "user.email", "bot@nexusgk.dev"], cwd=repo_path)
+    subprocess.run(["git", "config", "user.name", "NexusGKSoftwares"], cwd=repo_path)
+    subprocess.run(["git", "config", "user.email", "nexusgk3@gmail.com"], cwd=repo_path)
 
     print("\n🛠️  Generating commits...")
     date = datetime.strptime(start_date, "%Y-%m-%d")
